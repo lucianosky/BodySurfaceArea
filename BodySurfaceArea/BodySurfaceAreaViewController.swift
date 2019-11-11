@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BodySurfaceAreaViewController.swift
 //  BodySurfaceArea
 //
 //  Created by Luciano Sclovsky on 11/11/19.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BodySurfaceAreaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        title = "Área de Superfície Corporal"
     }
 
 
 }
-
