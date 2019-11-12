@@ -13,7 +13,20 @@
 		6E3929432379F62000E19389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E3929412379F62000E19389 /* LaunchScreen.storyboard */; };
 		6E39294C2379F8B700E19389 /* BodySurfaceAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E39294A2379F8B700E19389 /* BodySurfaceAreaViewController.swift */; };
 		6E39294D2379F8B700E19389 /* BodySurfaceAreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E39294B2379F8B700E19389 /* BodySurfaceAreaViewController.xib */; };
+		6ED51D66237AE57500C90630 /* BodySurfaceAreaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED51D65237AE57500C90630 /* BodySurfaceAreaCalculator.swift */; };
+		6ED51D68237B2F2700C90630 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED51D67237B2F2700C90630 /* Math.swift */; };
+		6ED51D70237B311700C90630 /* BodySurfaceAreaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED51D6F237B311700C90630 /* BodySurfaceAreaTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6ED51D72237B311700C90630 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E39292B2379F61B00E19389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E3929322379F61B00E19389;
+			remoteInfo = BodySurfaceArea;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6E3929332379F61B00E19389 /* BodySurfaceArea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodySurfaceArea.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,22 @@
 		6E3929442379F62000E19389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E39294A2379F8B700E19389 /* BodySurfaceAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySurfaceAreaViewController.swift; sourceTree = "<group>"; };
 		6E39294B2379F8B700E19389 /* BodySurfaceAreaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BodySurfaceAreaViewController.xib; sourceTree = "<group>"; };
+		6ED51D65237AE57500C90630 /* BodySurfaceAreaCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySurfaceAreaCalculator.swift; sourceTree = "<group>"; };
+		6ED51D67237B2F2700C90630 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		6ED51D6D237B311700C90630 /* BodySurfaceAreaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BodySurfaceAreaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED51D6F237B311700C90630 /* BodySurfaceAreaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySurfaceAreaTests.swift; sourceTree = "<group>"; };
+		6ED51D71237B311700C90630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6E3929302379F61B00E19389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ED51D6A237B311700C90630 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				6E3929352379F61B00E19389 /* BodySurfaceArea */,
+				6ED51D6E237B311700C90630 /* BodySurfaceAreaTests */,
 				6E3929342379F61B00E19389 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				6E3929332379F61B00E19389 /* BodySurfaceArea.app */,
+				6ED51D6D237B311700C90630 /* BodySurfaceAreaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,11 +87,22 @@
 				6E3929382379F61B00E19389 /* SceneDelegate.swift */,
 				6E39294A2379F8B700E19389 /* BodySurfaceAreaViewController.swift */,
 				6E39294B2379F8B700E19389 /* BodySurfaceAreaViewController.xib */,
+				6ED51D65237AE57500C90630 /* BodySurfaceAreaCalculator.swift */,
+				6ED51D67237B2F2700C90630 /* Math.swift */,
 				6E39293F2379F62000E19389 /* Assets.xcassets */,
 				6E3929412379F62000E19389 /* LaunchScreen.storyboard */,
 				6E3929442379F62000E19389 /* Info.plist */,
 			);
 			path = BodySurfaceArea;
+			sourceTree = "<group>";
+		};
+		6ED51D6E237B311700C90630 /* BodySurfaceAreaTests */ = {
+			isa = PBXGroup;
+			children = (
+				6ED51D6F237B311700C90630 /* BodySurfaceAreaTests.swift */,
+				6ED51D71237B311700C90630 /* Info.plist */,
+			);
+			path = BodySurfaceAreaTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +125,24 @@
 			productReference = 6E3929332379F61B00E19389 /* BodySurfaceArea.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6ED51D6C237B311700C90630 /* BodySurfaceAreaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ED51D74237B311700C90630 /* Build configuration list for PBXNativeTarget "BodySurfaceAreaTests" */;
+			buildPhases = (
+				6ED51D69237B311700C90630 /* Sources */,
+				6ED51D6A237B311700C90630 /* Frameworks */,
+				6ED51D6B237B311700C90630 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6ED51D73237B311700C90630 /* PBXTargetDependency */,
+			);
+			name = BodySurfaceAreaTests;
+			productName = BodySurfaceAreaTests;
+			productReference = 6ED51D6D237B311700C90630 /* BodySurfaceAreaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +155,10 @@
 				TargetAttributes = {
 					6E3929322379F61B00E19389 = {
 						CreatedOnToolsVersion = 11.1;
+					};
+					6ED51D6C237B311700C90630 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 6E3929322379F61B00E19389;
 					};
 				};
 			};
@@ -116,6 +176,7 @@
 			projectRoot = "";
 			targets = (
 				6E3929322379F61B00E19389 /* BodySurfaceArea */,
+				6ED51D6C237B311700C90630 /* BodySurfaceAreaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +192,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6ED51D6B237B311700C90630 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +206,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED51D66237AE57500C90630 /* BodySurfaceAreaCalculator.swift in Sources */,
 				6E39294C2379F8B700E19389 /* BodySurfaceAreaViewController.swift in Sources */,
 				6E3929372379F61B00E19389 /* AppDelegate.swift in Sources */,
 				6E3929392379F61B00E19389 /* SceneDelegate.swift in Sources */,
+				6ED51D68237B2F2700C90630 /* Math.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ED51D69237B311700C90630 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED51D70237B311700C90630 /* BodySurfaceAreaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6ED51D73237B311700C90630 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E3929322379F61B00E19389 /* BodySurfaceArea */;
+			targetProxy = 6ED51D72237B311700C90630 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6E3929412379F62000E19389 /* LaunchScreen.storyboard */ = {
@@ -308,6 +394,46 @@
 			};
 			name = Release;
 		};
+		6ED51D75237B311700C90630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SM8N4SFLYT;
+				INFOPLIST_FILE = BodySurfaceAreaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucianosky.skyffee.BodySurfaceAreaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BodySurfaceArea.app/BodySurfaceArea";
+			};
+			name = Debug;
+		};
+		6ED51D76237B311700C90630 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SM8N4SFLYT;
+				INFOPLIST_FILE = BodySurfaceAreaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.lucianosky.skyffee.BodySurfaceAreaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BodySurfaceArea.app/BodySurfaceArea";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -325,6 +451,15 @@
 			buildConfigurations = (
 				6E3929482379F62000E19389 /* Debug */,
 				6E3929492379F62000E19389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ED51D74237B311700C90630 /* Build configuration list for PBXNativeTarget "BodySurfaceAreaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ED51D75237B311700C90630 /* Debug */,
+				6ED51D76237B311700C90630 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
