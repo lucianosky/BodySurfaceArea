@@ -34,5 +34,4 @@ class BodySurfaceAreaTests: XCTestCase {
         XCTAssertEqual(mosteller, 2.1213203435596424)
     }
 
-
 }

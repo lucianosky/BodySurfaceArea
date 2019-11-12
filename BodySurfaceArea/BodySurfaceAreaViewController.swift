@@ -18,12 +18,15 @@ class BodySurfaceAreaViewController: UIViewController {
     @IBOutlet weak var mostellerLabel: UILabel!
     
     let calculator = BodySurfaceAreaCalculator()
-    
+    let formatter = NumberFormatter()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Área de Superfície Corporal"
         heightTextField.addTarget(self, action: #selector(BodySurfaceAreaViewController.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
         weightTextField.addTarget(self, action: #selector(BodySurfaceAreaViewController.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+        formatter.numberStyle = .decimal
+        formatter.decimalSeparator = Locale.current.decimalSeparator
         calculate()
     }
     
@@ -34,9 +37,9 @@ class BodySurfaceAreaViewController: UIViewController {
     func calculate() {
         guard
             let h = heightTextField.text,
-            let height = Double(h),
+            let hh = formatter.number(from: h),
             let w = weightTextField.text,
-            let weight = Double(w)
+            let ww = formatter.number(from: w)
         else {
             boydLabel.text = ""
             duboisLabel.text = ""
@@ -44,6 +47,8 @@ class BodySurfaceAreaViewController: UIViewController {
             mostellerLabel.text = ""
             return
         }
+        let height = Double(truncating: hh)
+        let weight = Double(truncating: ww)
         boydLabel.text = format(calculator.boyd(height: height, weight: weight))
         duboisLabel.text = format(calculator.dubois(height: height, weight: weight))
         haycockLabel.text = format(calculator.haycock(height: height, weight: weight))
@@ -51,7 +56,7 @@ class BodySurfaceAreaViewController: UIViewController {
     }
     
     func format(_ d: Double) -> String {
-        return String(format: "%.2f", arguments: [d]) + " m2"
+        return String(format: "%.2f", locale: Locale.current, arguments: [d]) + " m2"
     }
 
 }
