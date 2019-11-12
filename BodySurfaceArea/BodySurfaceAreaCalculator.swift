@@ -6,10 +6,13 @@
 //  Copyright © 2019 Luciano Sclovsky. All rights reserved.
 //
 
+// source:
+// http://www.medcalc.com/body.html
+    
 import Foundation
 
 class BodySurfaceAreaCalculator {
-        
+    
     func boyd(height: Double, weight: Double) -> Double {
         let heightCm = height * 100
         let weightG = weight * 1000
@@ -19,15 +22,20 @@ class BodySurfaceAreaCalculator {
     }
 
     func dubois(height: Double, weight: Double) -> Double {
-        return height + weight + 2
+        let result = 0.20247 * pow(height, 0.725) * pow(weight, 0.425)
+        return result
     }
 
     func haycock(height: Double, weight: Double) -> Double {
-        return height + weight + 3
+        let heightCm = height * 100
+        let result =  0.024265 * pow(heightCm, 0.3964) * pow(weight, 0.5378)
+        return result
     }
 
     func mosteller(height: Double, weight: Double) -> Double {
-        return height + weight + 4
+        let heightCm = height * 100
+        let result = sqrt((heightCm * weight) / 3600)
+        return result
     }
 
 }
