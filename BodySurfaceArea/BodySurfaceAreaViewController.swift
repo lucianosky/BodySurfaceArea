@@ -22,6 +22,12 @@ class BodySurfaceAreaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Área de Superfície Corporal"
+        heightTextField.addTarget(self, action: #selector(BodySurfaceAreaViewController.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+        weightTextField.addTarget(self, action: #selector(BodySurfaceAreaViewController.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+        calculate()
+    }
+    
+    @objc func textFieldDidChange(_ textField: UITextField) {
         calculate()
     }
     
